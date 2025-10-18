@@ -24,7 +24,9 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
+        isScrolled 
+          ? 'bg-background/80 backdrop-blur-xl shadow-soft border-b border-border/50' 
+          : 'bg-background/60 backdrop-blur-lg border-b border-white/10'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -32,7 +34,9 @@ const Header = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('inicio')}
-            className="text-2xl md:text-3xl font-elegant font-semibold text-foreground hover:text-primary transition-smooth"
+            className={`text-2xl md:text-3xl font-elegant font-semibold transition-smooth ${
+              isScrolled ? 'text-foreground' : 'text-white drop-shadow-lg'
+            } hover:text-primary`}
           >
             Isley Guillén
           </button>
@@ -42,35 +46,45 @@ const Header = () => {
             <Button
               variant="ghost"
               onClick={() => scrollToSection('inicio')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary font-medium ${
+                isScrolled ? 'text-foreground' : 'text-white drop-shadow-md'
+              }`}
             >
               Inicio
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('servicios')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary font-medium ${
+                isScrolled ? 'text-foreground' : 'text-white drop-shadow-md'
+              }`}
             >
               Servicios
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('portafolio')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary font-medium ${
+                isScrolled ? 'text-foreground' : 'text-white drop-shadow-md'
+              }`}
             >
               Portafolio
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('sobre-mi')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary font-medium ${
+                isScrolled ? 'text-foreground' : 'text-white drop-shadow-md'
+              }`}
             >
               Sobre mí
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('contacto')}
-              className="text-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary font-medium ${
+                isScrolled ? 'text-foreground' : 'text-white drop-shadow-md'
+              }`}
             >
               Contacto
             </Button>
@@ -82,7 +96,9 @@ const Header = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary ${
+                isScrolled ? 'text-muted-foreground' : 'text-white/90 drop-shadow-md'
+              }`}
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
@@ -91,7 +107,9 @@ const Header = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-smooth"
+              className={`transition-smooth hover:text-primary ${
+                isScrolled ? 'text-muted-foreground' : 'text-white/90 drop-shadow-md'
+              }`}
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
