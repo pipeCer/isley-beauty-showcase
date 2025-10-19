@@ -33,7 +33,7 @@ const Services = () => {
   const whatsappMessage = encodeURIComponent(
     'Hola Isley, me gustaría cotizar un servicio de maquillaje.'
   );
-  const whatsappNumber = '573222431077'; // Replace with actual number
+  const whatsappNumber = '573222431077';
 
   return (
     <section id="servicios" className="py-20 bg-cream">
@@ -51,23 +51,26 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-border bg-card shadow-soft hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in-up"
+              className="group flex flex-col justify-between overflow-hidden border-border bg-card shadow-soft hover:shadow-glow transition-smooth hover:-translate-y-2 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-smooth group-hover:scale-110"
-                />
+              <div>
+                <div className="relative h-64 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-smooth group-hover:scale-110"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="font-elegant text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-muted-foreground">
+                    {service.description}
+                  </CardDescription>
+                </CardHeader>
               </div>
-              <CardHeader>
-                <CardTitle className="font-elegant text-xl">{service.title}</CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {service.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+
+              <CardContent className="mt-auto">
                 <Button
                   variant="outline"
                   className="w-full border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-whatsapp-foreground transition-smooth"
