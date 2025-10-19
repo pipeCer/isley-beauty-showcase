@@ -50,8 +50,8 @@ const Header = () => {
               onClick={() => scrollToSection('inicio')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-primary'
-                  : 'text-white drop-shadow-md hover:text-white/80'
+                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
               }`}
             >
               Inicio
@@ -61,8 +61,8 @@ const Header = () => {
               onClick={() => scrollToSection('servicios')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-primary'
-                  : 'text-white drop-shadow-md hover:text-white/80'
+                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
               }`}
             >
               Servicios
@@ -72,8 +72,8 @@ const Header = () => {
               onClick={() => scrollToSection('portafolio')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-primary'
-                  : 'text-white drop-shadow-md hover:text-white/80'
+                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
               }`}
             >
               Portafolio
@@ -83,8 +83,8 @@ const Header = () => {
               onClick={() => scrollToSection('sobre-mi')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-primary'
-                  : 'text-white drop-shadow-md hover:text-white/80'
+                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
               }`}
             >
               Sobre mí
@@ -94,8 +94,8 @@ const Header = () => {
               onClick={() => scrollToSection('contacto')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-primary'
-                  : 'text-white drop-shadow-md hover:text-white/80'
+                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
               }`}
             >
               Contacto
@@ -108,24 +108,22 @@ const Header = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={`transition-smooth ${
-                isScrolled
-                  ? 'text-muted-foreground hover:text-primary'
-                  : 'text-white/90 drop-shadow-md hover:text-white'
-              }`}
+              className="transition-smooth hover:scale-110"
               aria-label="Instagram"
+              style={{
+                background: 'linear-gradient(135deg, hsl(var(--instagram-start)), hsl(var(--instagram-end)))',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
             >
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-5 h-5" style={{ WebkitTextFillColor: 'initial' }} />
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={`transition-smooth ${
-                isScrolled
-                  ? 'text-muted-foreground hover:text-primary'
-                  : 'text-white/90 drop-shadow-md hover:text-white'
-              }`}
+              className="text-[hsl(var(--facebook))] transition-smooth hover:scale-110"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />

@@ -38,10 +38,18 @@ All colors MUST be HSL.
 
     --whatsapp: 142 71% 49%;
     --whatsapp-foreground: 0 0% 100%;
+    
+    --facebook: 221 44% 41%;
+    --facebook-foreground: 0 0% 100%;
+    
+    --instagram-start: 326 100% 50%;
+    --instagram-end: 45 100% 58%;
 
     --champagne: 40 35% 75%;
     --rose-gold: 340 45% 88%;
     --cream: 40 20% 96%;
+    
+    --hover-elegant: 40 45% 65%;
 
     --radius: 0.75rem;
     
