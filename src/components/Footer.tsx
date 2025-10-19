@@ -18,28 +18,36 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-background/80 hover:text-primary transition-smooth"
+              className="group transition-smooth"
               aria-label="Instagram"
             >
-              <Instagram className="w-5 h-5" />
+              <div className="relative p-2 rounded-lg transition-smooth group-hover:bg-gradient-to-r group-hover:from-[hsl(var(--instagram-start))] group-hover:to-[hsl(var(--instagram-end))] group-hover:scale-110">
+                <Instagram 
+                  className="w-5 h-5 text-background/80 transition-smooth group-hover:text-white" 
+                />
+              </div>
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-background/80 hover:text-primary transition-smooth"
+              className="group transition-smooth"
               aria-label="Facebook"
             >
-              <Facebook className="w-5 h-5" />
+              <div className="p-2 rounded-lg transition-smooth group-hover:bg-[hsl(var(--facebook))] group-hover:scale-110">
+                <Facebook className="w-5 h-5 text-background/80 transition-smooth group-hover:text-white" />
+              </div>
             </a>
             <a
               href="https://wa.me/1234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-background/80 hover:text-whatsapp transition-smooth"
+              className="group transition-smooth"
               aria-label="WhatsApp"
             >
-              <MessageCircle className="w-5 h-5" />
+              <div className="p-2 rounded-lg transition-smooth group-hover:bg-[hsl(var(--whatsapp))] group-hover:scale-110">
+                <MessageCircle className="w-5 h-5 text-background/80 transition-smooth group-hover:text-white" />
+              </div>
             </a>
           </div>
 

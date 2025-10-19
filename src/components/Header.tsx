@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -132,6 +132,17 @@ const Header = () => {
             >
               <div className="p-2 rounded-lg transition-smooth group-hover:bg-[hsl(var(--facebook))] group-hover:scale-110">
                 <Facebook className="w-5 h-5 text-[hsl(var(--facebook))] transition-smooth group-hover:text-white" />
+              </div>
+            </a>
+            <a
+              href="https://wa.me/1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-smooth"
+              aria-label="WhatsApp"
+            >
+              <div className="p-2 rounded-lg transition-smooth group-hover:bg-[hsl(var(--whatsapp))] group-hover:scale-110">
+                <MessageCircle className="w-5 h-5 text-[hsl(var(--whatsapp))] transition-smooth group-hover:text-white" />
               </div>
             </a>
           </div>

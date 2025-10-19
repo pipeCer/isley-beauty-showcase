@@ -36,10 +36,10 @@ const Contact = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-smooth group"
+              className="flex flex-col items-center gap-2 text-muted-foreground transition-smooth group"
             >
-              <div className="p-4 rounded-full bg-muted group-hover:bg-primary/10 transition-smooth">
-                <Instagram className="w-6 h-6" />
+              <div className="p-4 rounded-full bg-muted transition-smooth group-hover:bg-gradient-to-r group-hover:from-[hsl(var(--instagram-start))] group-hover:to-[hsl(var(--instagram-end))] group-hover:scale-110">
+                <Instagram className="w-6 h-6 transition-smooth group-hover:text-white" />
               </div>
               <span className="text-sm font-medium">Instagram</span>
             </a>
@@ -48,10 +48,10 @@ const Contact = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-smooth group"
+              className="flex flex-col items-center gap-2 text-muted-foreground transition-smooth group"
             >
-              <div className="p-4 rounded-full bg-muted group-hover:bg-primary/10 transition-smooth">
-                <Facebook className="w-6 h-6" />
+              <div className="p-4 rounded-full bg-muted transition-smooth group-hover:bg-[hsl(var(--facebook))] group-hover:scale-110">
+                <Facebook className="w-6 h-6 transition-smooth group-hover:text-white" />
               </div>
               <span className="text-sm font-medium">Facebook</span>
             </a>
@@ -60,10 +60,10 @@ const Contact = () => {
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-whatsapp transition-smooth group"
+              className="flex flex-col items-center gap-2 text-muted-foreground transition-smooth group"
             >
-              <div className="p-4 rounded-full bg-muted group-hover:bg-whatsapp/10 transition-smooth">
-                <MessageCircle className="w-6 h-6" />
+              <div className="p-4 rounded-full bg-muted transition-smooth group-hover:bg-[hsl(var(--whatsapp))] group-hover:scale-110">
+                <MessageCircle className="w-6 h-6 transition-smooth group-hover:text-white" />
               </div>
               <span className="text-sm font-medium">WhatsApp</span>
             </a>
