@@ -50,8 +50,8 @@ const Header = () => {
               onClick={() => scrollToSection('inicio')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
-                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
+                  ? 'text-foreground hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/10'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--rose-gold))] hover:bg-white/10'
               }`}
             >
               Inicio
@@ -61,8 +61,8 @@ const Header = () => {
               onClick={() => scrollToSection('servicios')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
-                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
+                  ? 'text-foreground hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/10'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--rose-gold))] hover:bg-white/10'
               }`}
             >
               Servicios
@@ -72,8 +72,8 @@ const Header = () => {
               onClick={() => scrollToSection('portafolio')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
-                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
+                  ? 'text-foreground hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/10'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--rose-gold))] hover:bg-white/10'
               }`}
             >
               Portafolio
@@ -83,8 +83,8 @@ const Header = () => {
               onClick={() => scrollToSection('sobre-mi')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
-                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
+                  ? 'text-foreground hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/10'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--rose-gold))] hover:bg-white/10'
               }`}
             >
               Sobre mí
@@ -94,8 +94,8 @@ const Header = () => {
               onClick={() => scrollToSection('contacto')}
               className={`transition-smooth font-medium ${
                 isScrolled
-                  ? 'text-foreground hover:text-[hsl(var(--hover-elegant))]'
-                  : 'text-white drop-shadow-md hover:text-[hsl(var(--champagne))]'
+                  ? 'text-foreground hover:text-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/10'
+                  : 'text-white drop-shadow-md hover:text-[hsl(var(--rose-gold))] hover:bg-white/10'
               }`}
             >
               Contacto
@@ -108,25 +108,31 @@ const Header = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-smooth hover:scale-110"
+              className="group transition-smooth"
               aria-label="Instagram"
-              style={{
-                background: 'linear-gradient(135deg, hsl(var(--instagram-start)), hsl(var(--instagram-end)))',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
             >
-              <Instagram className="w-5 h-5" style={{ WebkitTextFillColor: 'initial' }} />
+              <div className="relative p-2 rounded-lg transition-smooth group-hover:bg-gradient-to-r group-hover:from-[hsl(var(--instagram-start))] group-hover:to-[hsl(var(--instagram-end))] group-hover:scale-110">
+                <Instagram 
+                  className="w-5 h-5 transition-smooth group-hover:text-white" 
+                  style={{
+                    background: 'linear-gradient(135deg, hsl(var(--instagram-start)), hsl(var(--instagram-end)))',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                />
+              </div>
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[hsl(var(--facebook))] transition-smooth hover:scale-110"
+              className="group transition-smooth"
               aria-label="Facebook"
             >
-              <Facebook className="w-5 h-5" />
+              <div className="p-2 rounded-lg transition-smooth group-hover:bg-[hsl(var(--facebook))] group-hover:scale-110">
+                <Facebook className="w-5 h-5 text-[hsl(var(--facebook))] transition-smooth group-hover:text-white" />
+              </div>
             </a>
           </div>
         </div>
