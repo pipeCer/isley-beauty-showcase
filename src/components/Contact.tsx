@@ -5,7 +5,7 @@ const Contact = () => {
   const whatsappMessage = encodeURIComponent(
     'Hola Isley, me gustaría cotizar un servicio de maquillaje.'
   );
-  const whatsappNumber = '1234567890'; // Replace with actual number
+  const whatsappNumber = '573222431077'; // Replace with actual number
 
   return (
     <section id="contacto" className="py-20 bg-background">
@@ -33,7 +33,7 @@ const Contact = () => {
           {/* Social Media Links */}
           <div className="flex items-center justify-center gap-8">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/isleybymakeup"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 text-muted-foreground transition-smooth group"
@@ -45,7 +45,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/beba.guillenparra"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-2 text-muted-foreground transition-smooth group"

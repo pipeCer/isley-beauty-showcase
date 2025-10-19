@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/isleybymakeup"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-smooth"
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/beba.guillenparra"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-smooth"
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </a>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/573222431077"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-smooth"

@@ -33,7 +33,7 @@ const Services = () => {
   const whatsappMessage = encodeURIComponent(
     'Hola Isley, me gustaría cotizar un servicio de maquillaje.'
   );
-  const whatsappNumber = '1234567890'; // Replace with actual number
+  const whatsappNumber = '573222431077'; // Replace with actual number
 
   return (
     <section id="servicios" className="py-20 bg-cream">

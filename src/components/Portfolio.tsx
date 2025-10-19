@@ -8,26 +8,26 @@ import portfolio3 from '@/assets/portfolio-3.jpg';
 import portfolio4 from '@/assets/portfolio-4.jpg';
 
 const portfolioImages = [
-  { 
-    src: portfolio1, 
-    alt: 'Maquillaje de novia',
-    description: 'Look nupcial elegante con acabado natural y radiante, perfecto para un día inolvidable.'
+  {
+    src: portfolio1,
+    alt: 'Maquillaje de Gala',
+    description: 'Estilo sofisticado para destacar en grandes momentos.'
   },
-  { 
-    src: portfolio2, 
-    alt: 'Maquillaje de gala',
-    description: 'Maquillaje sofisticado para eventos especiales con técnicas de alta definición.'
+  {
+    src: portfolio2,
+    alt: 'Maquillaje Editorial',
+    description: 'Belleza natural con un toque floral y elegante.'
   },
-  { 
-    src: portfolio3, 
-    alt: 'Maquillaje natural',
-    description: 'Estilo fresco y luminoso que realza tu belleza natural con toques sutiles.'
+  {
+    src: portfolio3,
+    alt: 'Maquillaje para Eventos',
+    description: 'Look glamuroso con acabado impecable y moderno.'
   },
-  { 
-    src: portfolio4, 
-    alt: 'Maquillaje para evento',
-    description: 'Look glamuroso y duradero ideal para fotografías y celebraciones especiales.'
-  },
+  {
+    src: portfolio4,
+    alt: 'Maquillaje Artístico',
+    description: 'Un look creativo lleno de color, textura y expresión.'
+  }
 ];
 
 const Portfolio = () => {
@@ -89,7 +89,7 @@ const Portfolio = () => {
 
       {/* Gallery Modal */}
       <Dialog open={selectedImageIndex !== null} onOpenChange={() => setSelectedImageIndex(null)}>
-        <DialogContent 
+        <DialogContent
           className="max-w-7xl w-full h-[90vh] p-0 bg-black/95 border-0"
           onKeyDown={handleKeyDown}
         >
